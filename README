@@ -1,0 +1,7 @@
+rm -rf webapp-build/
+java -classpath js.jar:compiler.jar org.mozilla.javascript.tools.shell.Main r.js -o webapp/scripts/app.build.js
+                |      |                                                    |       |
+                |      |                                                    |       path to the build config file
+                |      |                                                    path to r.js
+                |      path to compiler.jar
+                path to js.jar
